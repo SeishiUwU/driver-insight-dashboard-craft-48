@@ -3,7 +3,6 @@ import React from 'react';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Header } from '@/components/layout/Header';
 import { StatCard } from '@/components/dashboard/StatCard';
-import { DriverTable } from '@/components/dashboard/DriverTable';
 import { VehicleStatusCard } from '@/components/dashboard/VehicleStatusCard';
 import { PerformanceChart } from '@/components/dashboard/PerformanceChart';
 import { AlertsCard } from '@/components/dashboard/AlertsCard';
@@ -73,7 +72,6 @@ const Index = () => {
             {/* Left Column - Charts */}
             <div className="lg:col-span-2 space-y-6">
               <PerformanceChart />
-              <DriverTable />
             </div>
             
             {/* Right Column - Vehicle Status & Alerts */}
