@@ -6,52 +6,38 @@ const data = [
   {
     name: 'Mon',
     safetyScore: 82,
-    fuelEfficiency: 76,
-    driverScore: 85,
   },
   {
     name: 'Tue',
     safetyScore: 83,
-    fuelEfficiency: 78,
-    driverScore: 87,
   },
   {
     name: 'Wed',
     safetyScore: 86,
-    fuelEfficiency: 80,
-    driverScore: 84,
   },
   {
     name: 'Thu',
     safetyScore: 85,
-    fuelEfficiency: 81,
-    driverScore: 88,
   },
   {
     name: 'Fri',
     safetyScore: 87,
-    fuelEfficiency: 82,
-    driverScore: 90,
   },
   {
     name: 'Sat',
     safetyScore: 84,
-    fuelEfficiency: 79,
-    driverScore: 86,
   },
   {
     name: 'Sun',
     safetyScore: 89,
-    fuelEfficiency: 84,
-    driverScore: 91,
   },
 ];
 
 export function PerformanceChart() {
   return (
     <div className="dashboard-card">
-      <h3 className="text-lg font-semibold mb-1">Fleet Performance</h3>
-      <p className="text-sm text-gray-500 mb-4">Weekly performance metrics</p>
+      <h3 className="text-lg font-semibold mb-1">Safety Score</h3>
+      <p className="text-sm text-gray-500 mb-4">Weekly driver safety performance</p>
       
       <div className="h-[300px] w-full">
         <ResponsiveContainer width="100%" height="100%">
@@ -76,20 +62,6 @@ export function PerformanceChart() {
               strokeWidth={2}
               activeDot={{ r: 6 }} 
               name="Safety Score"
-            />
-            <Line 
-              type="monotone" 
-              dataKey="fuelEfficiency" 
-              stroke="#20b974" 
-              strokeWidth={2} 
-              name="Fuel Efficiency"
-            />
-            <Line 
-              type="monotone" 
-              dataKey="driverScore" 
-              stroke="#ffb208" 
-              strokeWidth={2} 
-              name="Driver Score"
             />
           </LineChart>
         </ResponsiveContainer>
