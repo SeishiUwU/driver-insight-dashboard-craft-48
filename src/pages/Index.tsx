@@ -7,6 +7,7 @@ import { DriverTable } from '@/components/dashboard/DriverTable';
 import { VehicleStatusCard } from '@/components/dashboard/VehicleStatusCard';
 import { PerformanceChart } from '@/components/dashboard/PerformanceChart';
 import { AlertsCard } from '@/components/dashboard/AlertsCard';
+import { VideoPlayer } from '@/components/dashboard/VideoPlayer';
 import { Users, Truck, Clock, AlertTriangle } from 'lucide-react';
 
 const Index = () => {
@@ -60,6 +61,11 @@ const Index = () => {
               iconBgColor="bg-red-100"
               change={{ value: "2", positive: false }}
             />
+          </div>
+          
+          {/* Video Player - Center */}
+          <div className="mb-6 max-w-3xl mx-auto">
+            <VideoPlayer videoSrc="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
           </div>
           
           {/* Main Content */}
