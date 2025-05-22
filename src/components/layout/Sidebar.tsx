@@ -3,9 +3,6 @@ import React from 'react';
 import { cn } from "@/lib/utils";
 import {
   Home,
-  Users,
-  Settings,
-  LineChart,
   User,
   Bell,
   Calendar,
@@ -42,28 +39,12 @@ export function Sidebar({ className }: SidebarProps) {
             <Home size={18} />
             <span>Dashboard</span>
           </a>
-          <a href="#" className="sidebar-link">
-            <Users size={18} />
-            <span>Drivers</span>
-          </a>
-          <a href="#" className="sidebar-link">
-            <LineChart size={18} />
-            <span>Analytics</span>
-          </a>
-          <a href="#" className="sidebar-link">
-            <Settings size={18} />
-            <span>Settings</span>
-          </a>
         </nav>
       </div>
 
       <div className="px-3 py-2 mt-6">
         <div className="text-xs font-medium text-gray-400 px-4 mb-2">SUPPORT</div>
         <nav className="space-y-1">
-          <a href="#" className="sidebar-link">
-            <HelpCircle size={18} />
-            <span>Help Center</span>
-          </a>
           <a href="#" className="sidebar-link">
             <Mail size={18} />
             <span>Contact Support</span>
