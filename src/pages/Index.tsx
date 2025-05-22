@@ -3,7 +3,6 @@ import React from 'react';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Header } from '@/components/layout/Header';
 import { PerformanceChart } from '@/components/dashboard/PerformanceChart';
-import { VehicleStatusCard } from '@/components/dashboard/VehicleStatusCard';
 import { AlertsCard } from '@/components/dashboard/AlertsCard';
 import { VideoPlayer } from '@/components/dashboard/VideoPlayer';
 
@@ -33,9 +32,8 @@ const Index = () => {
               <PerformanceChart />
             </div>
             
-            {/* Right Column - Vehicle Status & Alerts */}
+            {/* Right Column - Alerts */}
             <div className="space-y-6">
-              <VehicleStatusCard />
               <AlertsCard />
             </div>
           </div>
